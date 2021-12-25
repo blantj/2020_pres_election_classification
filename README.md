@@ -26,6 +26,8 @@ Many variables in the dataset were feature population counts heavily correlated 
 
 In order to deal with missing data, I first filled in two missing feature values using manually researched numbers. I imputed the remaining missing datapoints with KNN Imputer. This avoided having dropped datapoints reduce the sample size, while replacing missing values with the most accurate numbers possible. I next used Isolation Forest to identify the greatest outliers in the dataset. I didn't find any incorrectly entered or anomalous datapoints that needed to be dropped. However, I decided to replace all dataset values greater than 5 standard deviations from the mean with the 5 standard deviation value. This would mitigate the normal decrease in model performance caused by a feature values far from the mean.
 
+After scrubbing, the election classification dataset included 826 datapoints across 13 features.
+
 ## Explore Data
 
 
